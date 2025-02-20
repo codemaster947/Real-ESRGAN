@@ -31,15 +31,15 @@ from RealESRGAN import RealESRGAN
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-model = RealESRGAN(device, scale=4)
-model.load_weights('weights/RealESRGAN_x4.pth', download=True)
+model = RealESRGAN(device, 'realesr-general-x4v3')
+model.load_weights(download=True)
 
-path_to_image = 'inputs/lr_image.png'
-image = Image.open(path_to_image).convert('RGB')
+path_to_image = 'inputs/image.png'
+image = Image.open(path_to_image)
 
 sr_image = model.predict(image)
 
-sr_image.save('results/sr_image.png')
+sr_image.save('results/image.png')
 ```
 
 ### Examples
@@ -73,3 +73,32 @@ Low quality image:
 Real-ESRGAN result:
 
 ![](results/lion.png)
+---
+
+Low quality image:
+
+![](inputs/0014.jpg)
+
+Real-ESRGAN result:
+
+![](results/0014.jpg)
+
+---
+
+Low quality image:
+
+![](inputs/children-alpha.png)
+
+Real-ESRGAN result:
+
+![](results/children-alpha.png)
+
+---
+
+Low quality image:
+
+![](inputs/logo.jpg)
+
+Real-ESRGAN result:
+
+![](results/logo.jpg)
