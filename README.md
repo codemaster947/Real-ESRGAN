@@ -48,28 +48,28 @@ sr_image.save('results/sr_image.png')
 
 Low quality image:
 
-![](inputs/lr_image.png)
+![](inputs/image.png)
 
 Real-ESRGAN result:
 
-![](results/sr_image.png)
+![](results/image.png)
 
 ---
 
 Low quality image:
 
-![](inputs/lr_face.png)
+![](inputs/face.png)
 
 Real-ESRGAN result:
 
-![](results/sr_face.png)
+![](results/face.png)
 
 ---
 
 Low quality image:
 
-![](inputs/lr_lion.png)
+![](inputs/lion.png)
 
 Real-ESRGAN result:
 
-![](results/sr_lion.png)
+![](results/lion.png)

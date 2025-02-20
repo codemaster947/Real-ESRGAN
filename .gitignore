@@ -1,5 +1,8 @@
+.venv/
 build/
 dist/
+weights/
+converted_weights/
 *.egg-info/
 
 __pycache__/
